@@ -1,0 +1,36 @@
+.img_AI{
+  width: 100%;
+  height: 500px;
+  background-image: url(IMG/AI.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.img_Stars{
+  margin: 0 auto;
+  width: 1000px;
+  height: 500px;
+  background-image: url(IMG/Background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.img_DL{
+  margin: 0 auto;
+  width: 1000px;
+  height: 500px;
+  background-image: url(IMG/DL.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.img_ML{
+  margin: 0 auto;
+  width: 1000px;
+  height: 500px;
+  background-image: url(IMG/ML.png);
+  background-size: cover;
+  background-repeat: cover;
+  background-repeat: no-no-repeat;
+  background-position: center;
+}
