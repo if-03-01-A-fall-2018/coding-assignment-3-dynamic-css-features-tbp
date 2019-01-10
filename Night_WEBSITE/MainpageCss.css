@@ -40,7 +40,7 @@ ul li a{
   display: block;
 }
 ul li a:hover{
-  background-color: green;
+  background-color: aqua;
 }
 ul li ul li{
   display: none;
