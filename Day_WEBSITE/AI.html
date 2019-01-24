@@ -67,6 +67,23 @@
         </div>
         <div class="btn-container">
           <button id="toggle">Read More</button>
+
+          <button type="button" id="text" onclick="read()">Read More</button>
+          <script type="text/javascript">
+              var i = 0;
+              function read(){
+                if (!i) {
+                  document.getElementByID("text").style.display = "inline";
+                  document.getElementByID("read").innerHTML="Read Less"
+                  i=1:
+                }
+                else {
+                  document.getElementByID("text").style.display = "none";
+                  document.getElementByID("read").innerHTML="Read more"
+                  i=0;
+                }
+              }
+              </script>
         </div>
       </section>
     </div>

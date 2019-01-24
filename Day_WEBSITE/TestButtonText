@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Read More / Read Less</title>
+    <link rel="stylesheet" href="ReadMoreTest2.css">
+  </head>
+  <body>
+    <h1>Artificial In</h1>
+    <p>Artificial intelligence (AI), sometimes called machine intelligence, is intelligence demonstrated by machines, in contrast to the natural intelligence displayed by humans and other animals. In computer science AI research is defined as the study of "intelligent agents": any device that perceives its environment and takes actions that maximize its chance of successfully achieving its goals. Colloquially, the term "artificial intelligence" is applied when a machine mimics "cognitive" functions that humans associate with other human minds, such as "learning" and "problem solving" <span id="dots">...</span><span id="more">. ASDJASDHASDHASDHASHDAHSDHASHDASHDHASDASHDHASHDASHDHA
+    ASHDASHDHASDHASHDHASHDASHDHASDHASDashdajkshdkjashdkjashdkajlsfhsldkfjhaklsdfhaskldfhlkasdhflkasdjfhklaj sdhfklsjdhfaskljdfhlak sjhfjsdafhlksdfhajldfhjk</p>
+  </span>
+  <button type="button" id="read" onclick="read()">Read More</button>
+  <script type="text/javascript">
+    var i =0;
+    function read(){
+      if (!i) {
+        document.getElementByID("more").style.display ="inline";
+        document.getElementByID("dots").style.display ="none";
+        document.getElementByID("read").innerHTML="Read less";
+        i = 1;
+      }
+      else {
+        document.getElementByID("more").style.display ="none";
+        document.getElementByID("dots").style.display ="inline";
+        document.getElementByID("read").innerHTML="Read more";
+        i=0;
+      }
+    }
+  </script>
+  </body>
+</html>
