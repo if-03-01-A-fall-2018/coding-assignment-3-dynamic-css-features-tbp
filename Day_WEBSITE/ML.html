@@ -5,6 +5,8 @@
     <title>Artificial Inteligence</title>
     <link rel="stylesheet" href="AI.css">
     <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="ReadMore.css">
+    <script src="ReadMore.js"> </script>
   </head>
   <body>
     <nav>
@@ -31,65 +33,78 @@
         <p>Machine learning is closely related to (and often overlaps with) computational statistics, which also focuses on prediction-making through the use of computers. It has strong ties to mathematical optimization, which delivers methods, theory and application domains to the field. Machine learning is sometimes conflated with data mining, where the latter subfield focuses more on exploratory data analysis and is known as unsupervised learning.</p>
         <p>Within the field of data analytics, machine learning is a method used to devise complex models and algorithms that lend themselves to prediction; in commercial use, this is known as predictive analytics. These analytical models allow researchers, data scientists, engineers, and analysts to "produce reliable, repeatable decisions and results" and uncover "hidden insights" through learning from historical relationships and trends in the data</p>
         <br>
-        <h2>What are the elements of Machine Learning</h2>
-        <p>As mentioned, machine learning is a subset of AI and is generally split into two main categories: supervised and unsupervised learning.</p>
-        <br>
-        <h3>Supervised Learning</h3>
-        <p>A common technique for teaching AI systems is by training them using a very large number of labeled examples. These machine-learning systems are fed huge amounts of data, which has been annotated to highlight the features of interest. These might be photos labeled to indicate whether they contain a dog or written sentences that have footnotes to indicate whether the word 'bass' relates to music or a fish. Once trained, the system can then apply these labels can to new data, for example to a dog in a photo that's just been uploaded.</p>
-        <p>This process of teaching a machine by example is called supervised learning and the role of labeling these examples is commonly carried out by online workers, employed through platforms like Amazon Mechanical Turk.</p>
-        <p>Training these systems typically requires vast amounts of data, with some systems needing to scour millions of examples to learn how to carry out a task effectively -- although this is increasingly possible in an age of big data and widespread data mining. Training datasets are huge and growing in size -- Google's Open Images Dataset has about nine million images, while its labeled video repository YouTube-8M links to seven million labeled videos. ImageNet, one of the early databases of this kind, has more than 14 million categorized images. Compiled over two years, it was put together by nearly 50,000 people -- most of whom were recruited through Amazon Mechanical Turk -- who checked, sorted, and labeled almost one billion candidate pictures.</p>
-        <p>In the long run, having access to huge labelled datasets may also prove less important than access to large amounts of compute power.</p>
-        <p>In recent years, Generative Adversarial Networks ( GANs) have shown how machine-learning systems that are fed a small amount of labelled data can then generate huge amounts of fresh data to teach themselves.</p>
-        <p>This approach could lead to the rise of semi-supervised learning, where systems can learn how to carry out tasks using a far smaller amount of labelled data than is necessary for training systems using supervised learning today.</p>
-        <br>
-        <h3>Unsupervised Learning</h3>
-        <p>In contrast, unsupervised learning uses a different approach, where algorithms try to identify patterns in data, looking for similarities that can be used to categorise that data.</p>
-        <p>An example might be clustering together fruits that weigh a similar amount or cars with a similar engine size.</p>
-        <p>The algorithm isn't setup in advance to pick out specific types of data, it simply looks for data that can be grouped by its similarities, for example Google News grouping together stories on similar topics each day.</p>
-        <br>
-        <h3>Reinforcement Learning</h3>
-        <p>A crude analogy for reinforcement learning is rewarding a pet with a treat when it performs a trick.</p>
-        <p>In reinforcement learning, the system attempts to maximize a reward based on its input data, basically going through a process of trial and error until it arrives at the best possible outcome.</p>
-        <p>An example of reinforcement learning is Google DeepMind's Deep Q-network, which has been used to best human performance in a variety of classic video games. The system is fed pixels from each game and determines various information, such as the distance between objects on screen.</p>
-        <p>By also looking at the score achieved in each game the system builds a model of which action will maximize the score in different circumstances, for instance, in the case of the video game Breakout, where the paddle should be moved to in order to intercept the ball.</p>
-        <br>
-      </section>
-      <section>
-        <h1>Machine Learning Tasks</h1>
-        <hr>
-        <p>Machine learning tasks are typically classified into several broad categories: </p>
-        <ol>
-          <li>Supervised learning: The computer is presented with example inputs and their desired outputs, given by a "teacher", and the goal is to learn a general rule that maps inputs to outputs. As special cases, the input signal can be only partially available, or restricted to special feedback.
-          </li>
-          <li>Semi-supervised learning: The computer is given only an incomplete training signal: a training set with some (often many) of the target outputs missing.
-          </li>
-          <li>Active learning: The computer can only obtain training labels for a limited set of instances (based on a budget), and also has to optimize its choice of objects to acquire labels for. When used interactively, these can be presented to the user for labeling.
-          </li>
-          <li>Unsupervised learning: No labels are given to the learning algorithm, leaving it on its own to find structure in its input. Unsupervised learning can be a goal in itself (discovering hidden patterns in data) or a means towards an end (feature learning).
-          </li>
-          <li>Reinforcement learning: Data (in form of rewards and punishments) are given only as feedback to the program's actions in a dynamic environment, such as driving a vehicle or playing a game against an opponent
-          </li>
-        </ol>
-        <br>
-      </section>
-      <section>
-        <h1>The History and other relationships to other fields: Machine Learning</h1>
+        <div id="content" style="display:none;"><p>
+
+          <h2>What are the elements of Machine Learning</h2>
+          <p>As mentioned, machine learning is a subset of AI and is generally split into two main categories: supervised and unsupervised learning.</p>
+          <br>
+          <h3>Supervised Learning</h3>
+          <p>A common technique for teaching AI systems is by training them using a very large number of labeled examples. These machine-learning systems are fed huge amounts of data, which has been annotated to highlight the features of interest. These might be photos labeled to indicate whether they contain a dog or written sentences that have footnotes to indicate whether the word 'bass' relates to music or a fish. Once trained, the system can then apply these labels can to new data, for example to a dog in a photo that's just been uploaded.</p>
+          <p>This process of teaching a machine by example is called supervised learning and the role of labeling these examples is commonly carried out by online workers, employed through platforms like Amazon Mechanical Turk.</p>
+          <p>Training these systems typically requires vast amounts of data, with some systems needing to scour millions of examples to learn how to carry out a task effectively -- although this is increasingly possible in an age of big data and widespread data mining. Training datasets are huge and growing in size -- Google's Open Images Dataset has about nine million images, while its labeled video repository YouTube-8M links to seven million labeled videos. ImageNet, one of the early databases of this kind, has more than 14 million categorized images. Compiled over two years, it was put together by nearly 50,000 people -- most of whom were recruited through Amazon Mechanical Turk -- who checked, sorted, and labeled almost one billion candidate pictures.</p>
+          <p>In the long run, having access to huge labelled datasets may also prove less important than access to large amounts of compute power.</p>
+          <p>In recent years, Generative Adversarial Networks ( GANs) have shown how machine-learning systems that are fed a small amount of labelled data can then generate huge amounts of fresh data to teach themselves.</p>
+          <p>This approach could lead to the rise of semi-supervised learning, where systems can learn how to carry out tasks using a far smaller amount of labelled data than is necessary for training systems using supervised learning today.</p>
+          <br>
+          <h3>Unsupervised Learning</h3>
+          <p>In contrast, unsupervised learning uses a different approach, where algorithms try to identify patterns in data, looking for similarities that can be used to categorise that data.</p>
+          <p>An example might be clustering together fruits that weigh a similar amount or cars with a similar engine size.</p>
+          <p>The algorithm isn't setup in advance to pick out specific types of data, it simply looks for data that can be grouped by its similarities, for example Google News grouping together stories on similar topics each day.</p>
+          <br>
+          <h3>Reinforcement Learning</h3>
+          <p>A crude analogy for reinforcement learning is rewarding a pet with a treat when it performs a trick.</p>
+          <p>In reinforcement learning, the system attempts to maximize a reward based on its input data, basically going through a process of trial and error until it arrives at the best possible outcome.</p>
+          <p>An example of reinforcement learning is Google DeepMind's Deep Q-network, which has been used to best human performance in a variety of classic video games. The system is fed pixels from each game and determines various information, such as the distance between objects on screen.</p>
+          <p>By also looking at the score achieved in each game the system builds a model of which action will maximize the score in different circumstances, for instance, in the case of the video game Breakout, where the paddle should be moved to in order to intercept the ball.</p>
+          <br>
+
+          <h1>Machine Learning Tasks</h1>
           <hr>
+          <p>Machine learning tasks are typically classified into several broad categories: </p>
+          <ol>
+            <li>Supervised learning: The computer is presented with example inputs and their desired outputs, given by a "teacher", and the goal is to learn a general rule that maps inputs to outputs. As special cases, the input signal can be only partially available, or restricted to special feedback.
+            </li>
+            <li>Semi-supervised learning: The computer is given only an incomplete training signal: a training set with some (often many) of the target outputs missing.
+            </li>
+            <li>Active learning: The computer can only obtain training labels for a limited set of instances (based on a budget), and also has to optimize its choice of objects to acquire labels for. When used interactively, these can be presented to the user for labeling.
+            </li>
+            <li>Unsupervised learning: No labels are given to the learning algorithm, leaving it on its own to find structure in its input. Unsupervised learning can be a goal in itself (discovering hidden patterns in data) or a means towards an end (feature learning).
+            </li>
+            <li>Reinforcement learning: Data (in form of rewards and punishments) are given only as feedback to the program's actions in a dynamic environment, such as driving a vehicle or playing a game against an opponent
+            </li>
+          </ol>
           <br>
-          <p>Arthur Samuel, an American pioneer in the field of computer gaming and artificial intelligence, coined the term "Machine Learning" in 1959 while at IBM. As a scientific endeavour, machine learning grew out of the quest for artificial intelligence. Already in the early days of AI as an academic discipline, some researchers were interested in having machines learn from data. They attempted to approach the problem with various symbolic methods, as well as what were then termed "neural networks"; these were mostly perceptrons and other models that were later found to be reinventions of the generalized linear models of statistics. Probabilistic reasoning was also employed, especially in automated medical diagnosis.</p>
-          <p>However, an increasing emphasis on the logical, knowledge-based approach caused a rift between AI and machine learning. Probabilistic systems were plagued by theoretical and practical problems of data acquisition and representation.By 1980, expert systems had come to dominate AI, and statistics was out of favor. Work on symbolic/knowledge-based learning did continue within AI, leading to inductive logic programming, but the more statistical line of research was now outside the field of AI proper, in pattern recognition and information retrieval.Neural networks research had been abandoned by AI and computer science around the same time. This line, too, was continued outside the AI/CS field, as "connectionism", by researchers from other disciplines including Hopfield, Rumelhart and Hinton. Their main success came in the mid-1980s with the reinvention of backpropagation.</p>
-          <p>Machine learning, reorganized as a separate field, started to flourish in the 1990s. The field changed its goal from achieving artificial intelligence to tackling solvable problems of a practical nature. It shifted focus away from the symbolic approaches it had inherited from AI, and toward methods and models borrowed from statistics and probability theory. It also benefited from the increasing availability of digitized information, and the ability to distribute it via the Internet. </p>
-          <br>
-          <h2>RelationShip to data Mining</h2>
-          <p>Machine learning and data mining often employ the same methods and overlap significantly, but while machine learning focuses on prediction, based on known properties learned from the training data, data mining focuses on the discovery of (previously) unknown properties in the data (this is the analysis step of knowledge discovery in databases). Data mining uses many machine learning methods, but with different goals; on the other hand, machine learning also employs data mining methods as "unsupervised learning" or as a preprocessing step to improve learner accuracy. Much of the confusion between these two research communities (which do often have separate conferences and separate journals, ECML PKDD being a major exception) comes from the basic assumptions they work with: in machine learning, performance is usually evaluated with respect to the ability to reproduce known knowledge, while in knowledge discovery and data mining (KDD) the key task is the discovery of previously unknown knowledge. Evaluated with respect to known knowledge, an uninformed (unsupervised) method will easily be outperformed by other supervised methods, while in a typical KDD task, supervised methods cannot be used due to the unavailability of training data.</p>
-          <br>
-          <h2>Relation to optimization</h2>
-          <p>Machine learning also has intimate ties to optimization: many learning problems are formulated as minimization of some loss function on a training set of examples. Loss functions express the discrepancy between the predictions of the model being trained and the actual problem instances (for example, in classification, one wants to assign a label to instances, and models are trained to correctly predict the pre-assigned labels of a set of examples). The difference between the two fields arises from the goal of generalization: while optimization algorithms can minimize the loss on a training set, machine learning is concerned with minimizing the loss on unseen samples.</p>
-          <br>
-          <h2>Relation to statistics</h2>
-          <p>Machine learning and statistics are closely related fields. According to Michael I. Jordan, the ideas of machine learning, from methodological principles to theoretical tools, have had a long pre-history in statistics. He also suggested the term data science as a placeholder to call the overall field.
-          Leo Breiman distinguished two statistical modelling paradigms: data model and algorithmic model, wherein "algorithmic model" means more or less the machine learning algorithms like Random forest.
-          Some statisticians have adopted methods from machine learning, leading to a combined field that they call statistical learning.</p>
+          <h1>The History and other relationships to other fields: Machine Learning</h1>
+            <hr>
+            <br>
+            <p>Arthur Samuel, an American pioneer in the field of computer gaming and artificial intelligence, coined the term "Machine Learning" in 1959 while at IBM. As a scientific endeavour, machine learning grew out of the quest for artificial intelligence. Already in the early days of AI as an academic discipline, some researchers were interested in having machines learn from data. They attempted to approach the problem with various symbolic methods, as well as what were then termed "neural networks"; these were mostly perceptrons and other models that were later found to be reinventions of the generalized linear models of statistics. Probabilistic reasoning was also employed, especially in automated medical diagnosis.</p>
+            <p>However, an increasing emphasis on the logical, knowledge-based approach caused a rift between AI and machine learning. Probabilistic systems were plagued by theoretical and practical problems of data acquisition and representation.By 1980, expert systems had come to dominate AI, and statistics was out of favor. Work on symbolic/knowledge-based learning did continue within AI, leading to inductive logic programming, but the more statistical line of research was now outside the field of AI proper, in pattern recognition and information retrieval.Neural networks research had been abandoned by AI and computer science around the same time. This line, too, was continued outside the AI/CS field, as "connectionism", by researchers from other disciplines including Hopfield, Rumelhart and Hinton. Their main success came in the mid-1980s with the reinvention of backpropagation.</p>
+            <p>Machine learning, reorganized as a separate field, started to flourish in the 1990s. The field changed its goal from achieving artificial intelligence to tackling solvable problems of a practical nature. It shifted focus away from the symbolic approaches it had inherited from AI, and toward methods and models borrowed from statistics and probability theory. It also benefited from the increasing availability of digitized information, and the ability to distribute it via the Internet. </p>
+            <br>
+            <h2>RelationShip to data Mining</h2>
+            <p>Machine learning and data mining often employ the same methods and overlap significantly, but while machine learning focuses on prediction, based on known properties learned from the training data, data mining focuses on the discovery of (previously) unknown properties in the data (this is the analysis step of knowledge discovery in databases). Data mining uses many machine learning methods, but with different goals; on the other hand, machine learning also employs data mining methods as "unsupervised learning" or as a preprocessing step to improve learner accuracy. Much of the confusion between these two research communities (which do often have separate conferences and separate journals, ECML PKDD being a major exception) comes from the basic assumptions they work with: in machine learning, performance is usually evaluated with respect to the ability to reproduce known knowledge, while in knowledge discovery and data mining (KDD) the key task is the discovery of previously unknown knowledge. Evaluated with respect to known knowledge, an uninformed (unsupervised) method will easily be outperformed by other supervised methods, while in a typical KDD task, supervised methods cannot be used due to the unavailability of training data.</p>
+            <br>
+            <h2>Relation to optimization</h2>
+            <p>Machine learning also has intimate ties to optimization: many learning problems are formulated as minimization of some loss function on a training set of examples. Loss functions express the discrepancy between the predictions of the model being trained and the actual problem instances (for example, in classification, one wants to assign a label to instances, and models are trained to correctly predict the pre-assigned labels of a set of examples). The difference between the two fields arises from the goal of generalization: while optimization algorithms can minimize the loss on a training set, machine learning is concerned with minimizing the loss on unseen samples.</p>
+            <br>
+            <h2>Relation to statistics</h2>
+            <p>Machine learning and statistics are closely related fields. According to Michael I. Jordan, the ideas of machine learning, from methodological principles to theoretical tools, have had a long pre-history in statistics. He also suggested the term data science as a placeholder to call the overall field.
+            Leo Breiman distinguished two statistical modelling paradigms: data model and algorithmic model, wherein "algorithmic model" means more or less the machine learning algorithms like Random forest.
+            Some statisticians have adopted methods from machine learning, leading to a combined field that they call statistical learning.</p>
+        </div>
+        <button id="readMore" type="button" onclick = "show()">Read More</button>
+          <script type="text/javascript">
+            var readMore = document.getElementById('content');
+            var buttonMore = document.getElementById('button_id');
+            function show(){
+              if (readMore.style.display == 'none') {
+                readMore.style.display = 'block';
+              }
+              else{
+                readMore.style.display = 'none';
+              }
+            }
+          </script>
       </section>
     </div>
   </body>
