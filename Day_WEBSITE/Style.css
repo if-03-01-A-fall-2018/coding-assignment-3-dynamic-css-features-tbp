@@ -31,23 +31,23 @@ nav{
   width: 100%;
   background-color: #fff;
 }
-ul{
+.wrapper ul{
 margin-left: 0px;
 }
-ul li{
+.wrapper ul li{
   list-style: none;
   display: inline-block;
   float: left;
   line-height: 100px;
 }
-ul li a{
+.wrapper ul li a{
   display: block;;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 16px;
   font-family: arial;
   color: #1e1e1e;
   padding: 0 20px;
 }
-ul li a:hover{
+.wrapper ul li a:hover{
   color: red;
 }
