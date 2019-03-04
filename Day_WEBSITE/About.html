@@ -14,10 +14,37 @@
         <li><a href="AI.html">Artificial Intelligence</a> </li>
         <li><a href="DL.html">Deep Learning</a> </li>
         <li><a href="ML.html">Machine Learning</a> </li>
-        
       </ul>
       </div>
     </nav>
+
+    <div class="w3-content w3-display-container">
+      <img class="mySlides" src="AI.jpg" style="width:100%">
+      <img class="mySlides" src="DL.jpg" style="width:100%">
+      <img class="mySlides" src="ML.jpg" style="width:100%">
+      <img class="mySlides" src="Yasuo.jpg" style="width:100%">
+
+      <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+      <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+    </div>
+
+    <script type = "text/javascript">
+    var slideIndex = 0;
+    carousel();
+
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > x.length) {slideIndex = 1}
+      x[slideIndex-1].style.display = "block";
+      setTimeout(carousel, 2000); // Change image every 2 seconds
+    }
+    </script>
+
     <div class="wrapper">
       <h1>About</h1>
       <br>
@@ -29,10 +56,6 @@
       <p>I would like to thank you for checking out our webisite, we've put many hours of hard work into this website.</p>
       <p>I also hope that you have learned something new about Artificial Inteligence and that you also fun while doing it.</p>
       <p>If you would like, you could also check out this website for a bit different explanation. It is also our website, but we used a different approach.</p>
-
-      <br>
-      <h1>Something about me</h1>
-      <p>My name is Sebastijan Bogdan, I was born in Serbia and I moved to Austria when I was 14. I'm a student on </p>
     </div>
   </body>
 </html>

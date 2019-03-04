@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <link href='MainpageCss.css' rel='stylesheet'>
     <meta charset="utf-8">
     <title>A.I M.L & D.L</title>
+    <link href='MainpageCss.css' rel='stylesheet'>
+    <link rel="stylesheet" href="AI.css">
   </head>
   <body>
     <header>
@@ -36,6 +37,32 @@
         </nav>
       </div>
     </header>
+    <div class="w3-content w3-display-container">
+
+    </div>
+    <img class="mySlides" src="IMG/AI.jpg">
+    <img class="mySlides" src="IMG/DL.jpg" >
+    <img class="mySlides" src="IMG/ML.jpg" >
+    <img class="mySlides" src="IMG/Yasuo.jpg" >
+
+    <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+    <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+    <script type = "text/javascript">
+    var slideIndex = 0;
+    carousel();
+
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > x.length) {slideIndex = 1}
+      x[slideIndex-1].style.display = "block";
+      setTimeout(carousel, 2000); // Change image every 2 seconds
+    }
+    </script>
     <h1>WELCOME TO OUR WEBPAGE ABOUT ARTIFICIAL INTELIGENCE, MACHINE- AND DEEP LEARNING </br></h1>
     <p>Here you can learn more about the technlogy we have. You will find out the differences between the A.I and M.L, how they work </br>
        how they are mixed, where they are used and many other things. Hope you enjoy. </br> -Sebastijan Bogdan
