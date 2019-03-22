@@ -1,6 +1,6 @@
 function populate() {
   if (quiz.isEnded()) {
-    //showScores;
+    showScores();
   }
   else{
     // showQuestion
@@ -14,7 +14,14 @@ function populate() {
       element.innerHTML = choices[i];
     }
   }
+};
+function showScores(){
+  var gameOverHtml = "<h1>Result</h1>";
+  gameOverHtml += "<h2 id='score'> Your score: " +quiz.score + "</h2>";
+  var element = document.getElementById("quiz");
+  element.innerHTML= gameOverHtml;
 }
+
 var questions = [
   new Question("Easy Question A?", ["Answer A", "Answer B", "Answer C", "Answer D"], "A"),
   new Question("Easy Question B?", ["Answer A", "Answer B", "Answer C", "Answer D"], "B"),
