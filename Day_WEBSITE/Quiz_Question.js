@@ -1,6 +1,6 @@
 function Question(text, choices, answers){
   this.text = text;
-  this.choice = choice;
+  this.choices = choices;
   this.answers = answers;
 }
 
